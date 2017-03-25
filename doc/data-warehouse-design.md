@@ -19,28 +19,28 @@ Our goals today
 
 
 ## table structure
-fact_transaction
-    sale
-    profit
-    quantity
+* fact_transaction
+    * sale
+    * profit
+    * quantity
 
-dim_customer
-    type : varchar
-    name
+* dim_customer
+    * type : varchar
+    * name
 
-dim_product
+* dim_product
 
-dim_date(junk dimension)
-    date
-    year
-    week
-    month
+* dim_date(junk dimension)
+    * date
+    * year
+    * week
+    * month
 
-dim_store
+* dim_store
 
-dim_region
+* dim_region
 
-dim_product
+* dim_product
 
 
 
