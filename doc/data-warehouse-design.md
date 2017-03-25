@@ -3,15 +3,11 @@ Our goals today
     * add missing fields
 
 * finish all the query
-    4. 
-        product: we use 'make' to distinguish diff categories
+    4. product: we use 'make' to distinguish diff categories
         customer: we use 'kind' to distinguish diff categories
-    7. 
-        in dim_product, use type2 dimension
-    8.
-        we need to group by week & year
-    9. 
-        TO BE Conitinue 
+    7. in dim_product, use type2 dimension
+    8. we need to group by week & year
+    9. TO BE Conitinue
 
 * any problem in the query
 
