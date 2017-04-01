@@ -7,8 +7,11 @@ of **dw**. Beside this, we also need to consider situation
  
  So here is the steps:
  * load data into dimension table
-    * dim 1
-    * dim 2
+    * type 1
+        * exists-exist
+        * exists-not exists
+        * not exists-exists
+    * type 2
  * load data into fact table
     * use staging table to help
  * design batch running & tracking & recover system
