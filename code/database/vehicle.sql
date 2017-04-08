@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `vehicle` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `vehicle`;
 -- MySQL dump 10.13  Distrib 5.7.12, for osx10.9 (x86_64)
 --
 -- Host: localhost    Database: vehicle
@@ -157,7 +159,7 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
-INSERT INTO `product` VALUES (1,'ACURA','V6 EFI','SILVER','3.2 CL',10865.00,0.00,'Sedan','/image/1.jpg',1),(2,'ACURA','V6 NA S','SILVER','3.2 CL 3.2L',6643.00,0.00,'Sedan','/image/2.jpg',1),(3,'ACURA','V6NA S','WHITE','3.2 CL 3.2L',6446.00,0.00,'Sedan','/image/3.jpg',1),(4,'ACURA','V6 NA S','BLACK','3.2 TL',8940.00,0.00,'Sedan','/image/4.jpg',1),(5,'ACURA','V6 EFI','WHITE','3.2 TL 3.2L',8091.00,0.00,'Sedan','/image/5.jpg',1),(6,'ACURA','V6 EFI','BLUE','3.2 TL 3.2L',8257.00,0.00,'Sedan','/image/6.jpg',1),(7,'ACURA','V6 EFI','RED','3.2 TL 3.2L',11183.00,0.00,'Sedan','/image/7.jpg',1),(8,'ACURA','V6 NA S','RED','3.2 TL 3.2L',8554.00,0.00,'Sedan','/image/8.jpg',1),(9,'ACURA','V4','WHITE','3.2 TL 3.2L',8574.00,0.00,'Sedan','/image/9.jpg',1),(10,'ACURA','V6 DO','SILVER','3.2 TL 3.2L',9208.00,0.00,'Sedan','/image/10.jpg',1),(11,'TOYOTA','V6 NA S','GREY','4 RUNNER 2WD',15204.00,0.00,'Suv','/image/11.jpg',1),(12,'TOYOTA','V6 SFI','WHITE','AVALON',10559.00,0.00,'Sedan','/image/12.jpg',1),(13,'TOYOTA','V6 SOHC','SILVER','CAMRY 4C',10846.00,0.00,'Sedan','/image/13.jpg',1),(14,'TOYOTA','V6 NA S','GREY','CAMRY 4C',15158.00,0.00,'Sedan','/image/14.jpg',1),(15,'TOYOTA','V6 EFI','BLUE','CAMRY 4C',11127.00,0.00,'Sedan','/image/15.jpg',1),(16,'TOYOTA','V6 NA S','GREY','CAMRY 4C',11877.00,0.00,'Sedan','/image/16.jpg',1),(17,'TOYOTA','V6 DO','BLUE','CAMRY 4C',16331.00,0.00,'Sedan','/image/17.jpg',1),(18,'TOYOTA','V6 EFI','BLACK','CAMRY 4C',14972.00,0.00,'Sedan','/image/18.jpg',1),(19,'TOYOTA','V6 EFI','RED','CAMRY 4C',16675.00,0.00,'Sedan','/image/19.jpg',1),(20,'TOYOTA','V4','RED','CAMRY 4C',15077.00,0.00,'Sedan','/image/20.jpg',1),(21,'TOYOTA',' V6 MFI SC','SILVER','CAMRY 4C',15545.00,0.00,'Sedan','/image/21.jpg',1),(22,'TOYOTA','V6 NA S','WHITE','CAMRY 4C 2.4L I-4 EF',8585.00,0.00,'Sedan','/image/22.jpg',1),(23,'TOYOTA','Eco','SILVER','CAMRY 4C 2.4L I-4 SF',14135.00,0.00,'Sedan','/image/23.jpg',1),(24,'TOYOTA','V6 E','WHITE','CAMRY 4C 2.4L I4 SFI',11094.00,0.00,'Sedan','/image/24.jpg',1),(25,'TOYOTA','V6 SFI','WHITE','CAMRY 4C 2.4L I4 SFI',13072.00,0.00,'Sedan','/image/25.jpg',1),(26,'TOYOTA','V4','GREY','CAMRY 4C 2.4L I4 SFI',10964.00,0.00,'Sedan','/image/26.jpg',1),(27,'TOYOTA','V4','RED','CAMRY 4C 2.4L I4 SFI',13175.00,0.00,'Sedan','/image/27.jpg',1),(28,'TOYOTA','V6 S','GREY','CAMRY 4C 2.4L I4 SFI',13104.00,0.00,'Sedan','/image/28.jpg',1),(29,'TOYOTA','V6 SFI','RED','CAMRY SOLARA 4C',14089.00,0.00,'Sedan','/image/29.jpg',1),(30,'TOYOTA','V6 SFI','RED','CAMRY SOLARA 4C',13216.00,0.00,'Sedan','/image/30.jpg',1),(31,'TOYOTA','V6 EFI','GREEN','CAMRY SOLARA',9389.00,0.00,'Sedan','/image/31.jpg',1),(32,'TOYOTA','V6 E','GREEN','CAMRY SOLARA',5891.00,0.00,'Sedan','/image/32.jpg',1),(33,'TOYOTA','V4','BROWN','CAMRY',8878.00,0.00,'Sedan','/image/33.jpg',1),(34,'TOYOTA','V6 E','BLUE','CAMRY',14742.00,0.00,'Sedan','/image/34.jpg',1),(35,'TOYOTA',' V6 MFI SC','BLUE','CAMRY',16009.00,0.00,'Sedan','/image/35.jpg',1),(36,'TOYOTA','V4','WHITE','CAMRY',16770.00,0.00,'Sedan','/image/36.jpg',1),(37,'TOYOTA','V8 T','WHITE','CAMRY',11509.00,0.00,'Sedan','/image/37.jpg',1),(38,'TOYOTA','V8 T','SILVER','CAMRY',10302.00,0.00,'Sedan','/image/38.jpg',1),(39,'TOYOTA','V6 MFI SC','GREY','CAMRY',17204.00,0.00,'Sedan','/image/39.jpg',1),(40,'TOYOTA','V6NA S','BLACK','CAMRY',10994.00,0.00,'Sedan','/image/40.jpg',1),(41,'TOYOTA','Eco','WHITE','CAMRY',14924.00,0.00,'Sedan','/image/41.jpg',1),(42,'BUICK','V8','RED','CENTURY',5887.00,0.00,'Luxury','/image/42.jpg',1),(43,'BUICK','V4','WHITE','CENTURY',7424.00,0.00,'Luxury','/image/43.jpg',1),(44,'BUICK','Eco','WHITE','CENTURY',6627.00,0.00,'Luxury','/image/44.jpg',1),(45,'BUICK','V4','GOLD','CENTURY',7330.00,0.00,'Luxury','/image/45.jpg',1),(46,'BUICK','V6 SFI','WHITE','CENTURY',7496.00,0.00,'Luxury','/image/46.jpg',1),(47,'BUICK','V6 SFI','GOLD','CENTURY',6650.00,0.00,'Luxury','/image/47.jpg',1),(48,'BUICK','V6 MFI SC','WHITE','CENTURY',7890.00,0.00,'Luxury','/image/48.jpg',1),(49,'BUICK','V8 T','SILVER','CENTURY',8196.00,0.00,'Luxury','/image/49.jpg',1),(50,'BUICK','Eco','GREY','CENTURY',6622.00,0.00,'Luxury','/image/50.jpg',1),(51,'BUICK','V6 S','BEIGE','CENTURY',5402.00,0.00,'Luxury','/image/51.jpg',1),(52,'BUICK','V6 SFI','GOLD','CENTURY',5298.00,0.00,'Luxury','/image/52.jpg',1),(53,'BUICK','V4','GOLD','CENTURY',4375.00,0.00,'Luxury','/image/53.jpg',1),(54,'BUICK','V6 SFI','WHITE','CENTURY',4133.00,0.00,'Luxury','/image/54.jpg',1),(55,'BUICK','V6 E','GREY','CENTURY',5441.00,0.00,'Luxury','/image/55.jpg',1),(56,'BUICK','V6 T','SILVER','CENTURY',5208.00,0.00,'Luxury','/image/56.jpg',1),(57,'BUICK','Eco','WHITE','CENTURY',8979.00,0.00,'Luxury','/image/57.jpg',1),(58,'BUICK','V6 E','BROWN','CENTURY',6103.00,0.00,'Luxury','/image/58.jpg',1),(59,'TOYOTA',' V6 MFI SC','SILVER','COROLLA',8660.00,0.00,'Sedan','/image/59.jpg',1),(60,'TOYOTA','V6 MFI SC','GREY','COROLLA',11059.00,0.00,'Sedan','/image/60.jpg',1),(61,'TOYOTA','V6 E','BLACK','COROLLA',11059.00,0.00,'Sedan','/image/61.jpg',1),(62,'TOYOTA','V8 T','SILVER','COROLLA',7258.00,0.00,'Sedan','/image/62.jpg',1),(63,'TOYOTA','V4','BLACK','COROLLA',5683.00,0.00,'Sedan','/image/63.jpg',1),(64,'TOYOTA','V6 MFI SC','GOLD','COROLLA',11802.00,0.00,'Sedan','/image/64.jpg',1),(65,'TOYOTA','V4','BLACK','COROLLA',12742.00,0.00,'Sedan','/image/65.jpg',1),(66,'TOYOTA','V4','BLACK','COROLLA',8178.00,0.00,'Sedan','/image/66.jpg',1),(67,'TOYOTA','V6 SFI','BEIGE','COROLLA',12575.00,0.00,'Sedan','/image/67.jpg',1),(68,'TOYOTA','V4','SILVER','COROLLA',7780.00,0.00,'Sedan','/image/68.jpg',1),(69,'TOYOTA','Eco','BLUE','COROLLA',8242.00,0.00,'Sedan','/image/69.jpg',1),(70,'TOYOTA','Eco','GOLD','COROLLA',9796.00,0.00,'Sedan','/image/70.jpg',1),(71,'TOYOTA','V6 NA S','RED','COROLLA',8009.00,0.00,'Sedan','/image/71.jpg',1),(72,'TOYOTA','V6 NA S','SILVER','COROLLA',9824.00,0.00,'Sedan','/image/72.jpg',1),(73,'TOYOTA','V6 DO','GREEN','COROLLA',6598.00,0.00,'Sedan','/image/73.jpg',1),(74,'TOYOTA','V6 EFI','SILVER','COROLLA',9068.00,0.00,'Sedan','/image/74.jpg',1),(75,'TOYOTA','V6 E','GOLD','COROLLA',10369.00,0.00,'Sedan','/image/75.jpg',1),(76,'TOYOTA','V6 SFI','SILVER','COROLLA',12441.00,0.00,'Sedan','/image/76.jpg',1),(77,'CHEVROLET','V6 SFI','RED','EQUINOX AWD',12716.00,0.00,'Suv','/image/77.jpg',1),(78,'TOYOTA','V6 EFI','RED','HIGHLANDER 2WD',9591.00,0.00,'Suv','/image/78.jpg',1),(79,'TOYOTA','V6 S','WHITE','HIGHLANDER 2WD',9582.00,0.00,'Suv','/image/79.jpg',1),(80,'TOYOTA','V6 EFI','SILVER','HIGHLANDER 2WD',10303.00,0.00,'Suv','/image/80.jpg',1),(81,'TOYOTA','V4','GOLD','HIGHLANDER 2WD',10218.00,0.00,'Suv','/image/81.jpg',1),(82,'CHEVROLET','V8','GREY','IMPALA',12212.00,0.00,'Sedan','/image/82.jpg',1),(83,'CHEVROLET','V4','BROWN','IMPALA',12471.00,0.00,'Sedan','/image/83.jpg',1),(84,'CHEVROLET',' V6 MFI SC','BLUE','IMPALA',8973.00,0.00,'Sedan','/image/84.jpg',1),(85,'CHEVROLET','V6 SFI','SILVER','IMPALA',12235.00,0.00,'Sedan','/image/85.jpg',1),(86,'CHEVROLET','V6 E','BLUE','IMPALA',10798.00,0.00,'Sedan','/image/86.jpg',1),(87,'CHEVROLET','V6 DO','GREY','IMPALA 3.5L',12064.00,0.00,'Sedan','/image/87.jpg',1),(88,'CHEVROLET','V4','RED','IMPALA',14604.00,0.00,'Sedan','/image/88.jpg',1),(89,'BUICK','V6 E','SILVER','LACROSSE',13619.00,0.00,'Sedan','/image/89.jpg',1),(90,'BUICK','V6 SFI','SILVER','LACROSSE',10851.00,0.00,'Sedan','/image/90.jpg',1),(91,'BUICK','V6 MFI SC','WHITE','LACROSSE',12763.00,0.00,'Sedan','/image/91.jpg',1),(92,'BUICK','V6 SFI','BLUE','LACROSSE',14133.00,0.00,'Sedan','/image/92.jpg',1),(93,'BUICK','V6 E','MAROON','LACROSSE',13547.00,0.00,'Sedan','/image/93.jpg',1),(94,'BUICK','V4','BEIGE','LACROSSE',12109.00,0.00,'Sedan','/image/94.jpg',1),(95,'BUICK','V6 SFI','BLACK','LACROSSE 3.8L',12858.00,0.00,'Sedan','/image/95.jpg',1),(96,'BUICK','V6 E','WHITE','LACROSSE 3.8L',11100.00,0.00,'Sedan','/image/96.jpg',1),(97,'BUICK','V6 SFI','GREY','LACROSSE 3.8L',11100.00,0.00,'Sedan','/image/97.jpg',1),(98,'BUICK','V6 MFI SC','BLUE','LACROSSE 3.8L',12281.00,0.00,'Sedan','/image/98.jpg',1),(99,'BUICK','V6 E','SILVER','LACROSSE 3.8L',13978.00,0.00,'Sedan','/image/99.jpg',1),(100,'BUICK','V6 SFI','SILVER','LE SABRE',11050.00,0.00,'Sedan','/image/100.jpg',1),(101,'BUICK','V4','WHITE','LE SABRE',8409.00,0.00,'Sedan','/image/101.jpg',1),(102,'BUICK','V6 SFI','BLUE','LE SABRE',8829.00,0.00,'Sedan','/image/102.jpg',1),(103,'BUICK','V4','WHITE','LE SABRE',7894.00,0.00,'Sedan','/image/103.jpg',1),(104,'BUICK','V4','SILVER','LE SABRE 3.8L',7776.00,0.00,'Sedan','/image/104.jpg',1),(105,'BUICK','Eco','SILVER','LE SABRE 3.8L',6114.00,0.00,'Sedan','/image/105.jpg',1),(106,'BUICK',' V6 MFI SC','GREY','LE SABRE Unspecified',6500.00,0.00,'Sedan','/image/106.jpg',1),(107,'BUICK','V4','SILVER','LE SABRE Unspecified',6322.00,0.00,'Sedan','/image/107.jpg',1),(108,'BUICK','V6 E','SILVER','LE SABRE Unspecified',5843.00,0.00,'Sedan','/image/108.jpg',1),(109,'BUICK','V4','GREEN','LE SABRE Unspecified',6500.00,0.00,'Sedan','/image/109.jpg',1),(110,'BUICK','V6 SFI','BLUE','LE SABRE Unspecified',5397.00,0.00,'Sedan','/image/110.jpg',1),(111,'CHEVROLET','V6 NA S','SILVER','MALIBU 4C',6909.00,0.00,'Sedan','/image/111.jpg',1),(112,'CHEVROLET',' V6 MFI SC','BLUE','MALIBU 4C',11661.00,0.00,'Sedan','/image/112.jpg',1),(113,'CHEVROLET','V6 SFI','SILVER','MALIBU 4C',11914.00,0.00,'Sedan','/image/113.jpg',1),(114,'CHEVROLET','V4','BLUE','MALIBU 4C',12413.00,0.00,'Sedan','/image/114.jpg',1),(115,'CHEVROLET','V6 NA S','BEIGE','MALIBU 4C 2.2L I4 MP',8806.00,0.00,'Sedan','/image/115.jpg',1),(116,'CHEVROLET','V6 NA S','RED','MALIBU V6',12224.00,0.00,'Sedan','/image/116.jpg',1),(117,'CHEVROLET','V6 T','GOLD','MALIBU V6',11078.00,0.00,'Sedan','/image/117.jpg',1),(118,'CHEVROLET','V6 SOHC','BLUE','MALIBU V6 3.1L',4407.00,0.00,'Sedan','/image/118.jpg',1);
+INSERT INTO `product` VALUES (1,'ACURA','V6 EFI','SILVER','3.2 CL',10865.00,3000.00,'Sedan','/image/1.jpg',1),(2,'ACURA','V6 NA S','SILVER','3.2 CL 3.2L',6643.00,0.00,'Sedan','/image/2.jpg',1),(3,'ACURA','V6NA S','WHITE','3.2 CL 3.2L',6446.00,0.00,'Sedan','/image/3.jpg',1),(4,'ACURA','V6 NA S','BLACK','3.2 TL',8940.00,0.00,'Sedan','/image/4.jpg',1),(5,'ACURA','V6 EFI','WHITE','3.2 TL 3.2L',8091.00,0.00,'Sedan','/image/5.jpg',1),(6,'ACURA','V6 EFI','BLUE','3.2 TL 3.2L',8257.00,0.00,'Sedan','/image/6.jpg',1),(7,'ACURA','V6 EFI','RED','3.2 TL 3.2L',11183.00,0.00,'Sedan','/image/7.jpg',1),(8,'ACURA','V6 NA S','RED','3.2 TL 3.2L',8554.00,0.00,'Sedan','/image/8.jpg',1),(9,'ACURA','V4','WHITE','3.2 TL 3.2L',8574.00,0.00,'Sedan','/image/9.jpg',1),(10,'ACURA','V6 DO','SILVER','3.2 TL 3.2L',9208.00,0.00,'Sedan','/image/10.jpg',1),(11,'TOYOTA','V6 NA S','GREY','4 RUNNER 2WD',15204.00,0.00,'Suv','/image/11.jpg',1),(12,'TOYOTA','V6 SFI','WHITE','AVALON',10559.00,0.00,'Sedan','/image/12.jpg',1),(13,'TOYOTA','V6 SOHC','SILVER','CAMRY 4C',10846.00,0.00,'Sedan','/image/13.jpg',1),(14,'TOYOTA','V6 NA S','GREY','CAMRY 4C',15158.00,0.00,'Sedan','/image/14.jpg',1),(15,'TOYOTA','V6 EFI','BLUE','CAMRY 4C',11127.00,0.00,'Sedan','/image/15.jpg',1),(16,'TOYOTA','V6 NA S','GREY','CAMRY 4C',11877.00,0.00,'Sedan','/image/16.jpg',1),(17,'TOYOTA','V6 DO','BLUE','CAMRY 4C',16331.00,0.00,'Sedan','/image/17.jpg',1),(18,'TOYOTA','V6 EFI','BLACK','CAMRY 4C',14972.00,0.00,'Sedan','/image/18.jpg',1),(19,'TOYOTA','V6 EFI','RED','CAMRY 4C',16675.00,0.00,'Sedan','/image/19.jpg',1),(20,'TOYOTA','V4','RED','CAMRY 4C',15077.00,0.00,'Sedan','/image/20.jpg',1),(21,'TOYOTA',' V6 MFI SC','SILVER','CAMRY 4C',15545.00,0.00,'Sedan','/image/21.jpg',1),(22,'TOYOTA','V6 NA S','WHITE','CAMRY 4C 2.4L I-4 EF',8585.00,0.00,'Sedan','/image/22.jpg',1),(23,'TOYOTA','Eco','SILVER','CAMRY 4C 2.4L I-4 SF',14135.00,0.00,'Sedan','/image/23.jpg',1),(24,'TOYOTA','V6 E','WHITE','CAMRY 4C 2.4L I4 SFI',11094.00,0.00,'Sedan','/image/24.jpg',1),(25,'TOYOTA','V6 SFI','WHITE','CAMRY 4C 2.4L I4 SFI',13072.00,0.00,'Sedan','/image/25.jpg',1),(26,'TOYOTA','V4','GREY','CAMRY 4C 2.4L I4 SFI',10964.00,0.00,'Sedan','/image/26.jpg',1),(27,'TOYOTA','V4','RED','CAMRY 4C 2.4L I4 SFI',13175.00,0.00,'Sedan','/image/27.jpg',1),(28,'TOYOTA','V6 S','GREY','CAMRY 4C 2.4L I4 SFI',13104.00,0.00,'Sedan','/image/28.jpg',1),(29,'TOYOTA','V6 SFI','RED','CAMRY SOLARA 4C',14089.00,0.00,'Sedan','/image/29.jpg',1),(30,'TOYOTA','V6 SFI','RED','CAMRY SOLARA 4C',13216.00,0.00,'Sedan','/image/30.jpg',1),(31,'TOYOTA','V6 EFI','GREEN','CAMRY SOLARA',9389.00,0.00,'Sedan','/image/31.jpg',1),(32,'TOYOTA','V6 E','GREEN','CAMRY SOLARA',5891.00,0.00,'Sedan','/image/32.jpg',1),(33,'TOYOTA','V4','BROWN','CAMRY',8878.00,0.00,'Sedan','/image/33.jpg',1),(34,'TOYOTA','V6 E','BLUE','CAMRY',14742.00,0.00,'Sedan','/image/34.jpg',1),(35,'TOYOTA',' V6 MFI SC','BLUE','CAMRY',16009.00,0.00,'Sedan','/image/35.jpg',1),(36,'TOYOTA','V4','WHITE','CAMRY',16770.00,0.00,'Sedan','/image/36.jpg',1),(37,'TOYOTA','V8 T','WHITE','CAMRY',11509.00,0.00,'Sedan','/image/37.jpg',1),(38,'TOYOTA','V8 T','SILVER','CAMRY',10302.00,0.00,'Sedan','/image/38.jpg',1),(39,'TOYOTA','V6 MFI SC','GREY','CAMRY',17204.00,0.00,'Sedan','/image/39.jpg',1),(40,'TOYOTA','V6NA S','BLACK','CAMRY',10994.00,0.00,'Sedan','/image/40.jpg',1),(41,'TOYOTA','Eco','WHITE','CAMRY',14924.00,0.00,'Sedan','/image/41.jpg',1),(42,'BUICK','V8','RED','CENTURY',5887.00,0.00,'Luxury','/image/42.jpg',1),(43,'BUICK','V4','WHITE','CENTURY',7424.00,0.00,'Luxury','/image/43.jpg',1),(44,'BUICK','Eco','WHITE','CENTURY',6627.00,0.00,'Luxury','/image/44.jpg',1),(45,'BUICK','V4','GOLD','CENTURY',7330.00,0.00,'Luxury','/image/45.jpg',1),(46,'BUICK','V6 SFI','WHITE','CENTURY',7496.00,0.00,'Luxury','/image/46.jpg',1),(47,'BUICK','V6 SFI','GOLD','CENTURY',6650.00,0.00,'Luxury','/image/47.jpg',1),(48,'BUICK','V6 MFI SC','WHITE','CENTURY',7890.00,0.00,'Luxury','/image/48.jpg',1),(49,'BUICK','V8 T','SILVER','CENTURY',8196.00,0.00,'Luxury','/image/49.jpg',1),(50,'BUICK','Eco','GREY','CENTURY',6622.00,0.00,'Luxury','/image/50.jpg',1),(51,'BUICK','V6 S','BEIGE','CENTURY',5402.00,0.00,'Luxury','/image/51.jpg',1),(52,'BUICK','V6 SFI','GOLD','CENTURY',5298.00,0.00,'Luxury','/image/52.jpg',1),(53,'BUICK','V4','GOLD','CENTURY',4375.00,0.00,'Luxury','/image/53.jpg',1),(54,'BUICK','V6 SFI','WHITE','CENTURY',4133.00,0.00,'Luxury','/image/54.jpg',1),(55,'BUICK','V6 E','GREY','CENTURY',5441.00,0.00,'Luxury','/image/55.jpg',1),(56,'BUICK','V6 T','SILVER','CENTURY',5208.00,0.00,'Luxury','/image/56.jpg',1),(57,'BUICK','Eco','WHITE','CENTURY',8979.00,0.00,'Luxury','/image/57.jpg',1),(58,'BUICK','V6 E','BROWN','CENTURY',6103.00,0.00,'Luxury','/image/58.jpg',1),(59,'TOYOTA',' V6 MFI SC','SILVER','COROLLA',8660.00,0.00,'Sedan','/image/59.jpg',1),(60,'TOYOTA','V6 MFI SC','GREY','COROLLA',11059.00,0.00,'Sedan','/image/60.jpg',1),(61,'TOYOTA','V6 E','BLACK','COROLLA',11059.00,0.00,'Sedan','/image/61.jpg',1),(62,'TOYOTA','V8 T','SILVER','COROLLA',7258.00,0.00,'Sedan','/image/62.jpg',1),(63,'TOYOTA','V4','BLACK','COROLLA',5683.00,0.00,'Sedan','/image/63.jpg',1),(64,'TOYOTA','V6 MFI SC','GOLD','COROLLA',11802.00,0.00,'Sedan','/image/64.jpg',1),(65,'TOYOTA','V4','BLACK','COROLLA',12742.00,0.00,'Sedan','/image/65.jpg',1),(66,'TOYOTA','V4','BLACK','COROLLA',8178.00,0.00,'Sedan','/image/66.jpg',1),(67,'TOYOTA','V6 SFI','BEIGE','COROLLA',12575.00,0.00,'Sedan','/image/67.jpg',1),(68,'TOYOTA','V4','SILVER','COROLLA',7780.00,0.00,'Sedan','/image/68.jpg',1),(69,'TOYOTA','Eco','BLUE','COROLLA',8242.00,0.00,'Sedan','/image/69.jpg',1),(70,'TOYOTA','Eco','GOLD','COROLLA',9796.00,0.00,'Sedan','/image/70.jpg',1),(71,'TOYOTA','V6 NA S','RED','COROLLA',8009.00,0.00,'Sedan','/image/71.jpg',1),(72,'TOYOTA','V6 NA S','SILVER','COROLLA',9824.00,0.00,'Sedan','/image/72.jpg',1),(73,'TOYOTA','V6 DO','GREEN','COROLLA',6598.00,0.00,'Sedan','/image/73.jpg',1),(74,'TOYOTA','V6 EFI','SILVER','COROLLA',9068.00,0.00,'Sedan','/image/74.jpg',1),(75,'TOYOTA','V6 E','GOLD','COROLLA',10369.00,0.00,'Sedan','/image/75.jpg',1),(76,'TOYOTA','V6 SFI','SILVER','COROLLA',12441.00,0.00,'Sedan','/image/76.jpg',1),(77,'CHEVROLET','V6 SFI','RED','EQUINOX AWD',12716.00,0.00,'Suv','/image/77.jpg',1),(78,'TOYOTA','V6 EFI','RED','HIGHLANDER 2WD',9591.00,0.00,'Suv','/image/78.jpg',1),(79,'TOYOTA','V6 S','WHITE','HIGHLANDER 2WD',9582.00,0.00,'Suv','/image/79.jpg',1),(80,'TOYOTA','V6 EFI','SILVER','HIGHLANDER 2WD',10303.00,0.00,'Suv','/image/80.jpg',1),(81,'TOYOTA','V4','GOLD','HIGHLANDER 2WD',10218.00,0.00,'Suv','/image/81.jpg',1),(82,'CHEVROLET','V8','GREY','IMPALA',12212.00,0.00,'Sedan','/image/82.jpg',1),(83,'CHEVROLET','V4','BROWN','IMPALA',12471.00,0.00,'Sedan','/image/83.jpg',1),(84,'CHEVROLET',' V6 MFI SC','BLUE','IMPALA',8973.00,0.00,'Sedan','/image/84.jpg',1),(85,'CHEVROLET','V6 SFI','SILVER','IMPALA',12235.00,0.00,'Sedan','/image/85.jpg',1),(86,'CHEVROLET','V6 E','BLUE','IMPALA',10798.00,0.00,'Sedan','/image/86.jpg',1),(87,'CHEVROLET','V6 DO','GREY','IMPALA 3.5L',12064.00,0.00,'Sedan','/image/87.jpg',1),(88,'CHEVROLET','V4','RED','IMPALA',14604.00,0.00,'Sedan','/image/88.jpg',1),(89,'BUICK','V6 E','SILVER','LACROSSE',13619.00,0.00,'Sedan','/image/89.jpg',1),(90,'BUICK','V6 SFI','SILVER','LACROSSE',10851.00,0.00,'Sedan','/image/90.jpg',1),(91,'BUICK','V6 MFI SC','WHITE','LACROSSE',12763.00,0.00,'Sedan','/image/91.jpg',1),(92,'BUICK','V6 SFI','BLUE','LACROSSE',14133.00,0.00,'Sedan','/image/92.jpg',1),(93,'BUICK','V6 E','MAROON','LACROSSE',13547.00,0.00,'Sedan','/image/93.jpg',1),(94,'BUICK','V4','BEIGE','LACROSSE',12109.00,0.00,'Sedan','/image/94.jpg',1),(95,'BUICK','V6 SFI','BLACK','LACROSSE 3.8L',12858.00,0.00,'Sedan','/image/95.jpg',1),(96,'BUICK','V6 E','WHITE','LACROSSE 3.8L',11100.00,0.00,'Sedan','/image/96.jpg',1),(97,'BUICK','V6 SFI','GREY','LACROSSE 3.8L',11100.00,0.00,'Sedan','/image/97.jpg',1),(98,'BUICK','V6 MFI SC','BLUE','LACROSSE 3.8L',12281.00,0.00,'Sedan','/image/98.jpg',1),(99,'BUICK','V6 E','SILVER','LACROSSE 3.8L',13978.00,0.00,'Sedan','/image/99.jpg',1),(100,'BUICK','V6 SFI','SILVER','LE SABRE',11050.00,0.00,'Sedan','/image/100.jpg',1),(101,'BUICK','V4','WHITE','LE SABRE',8409.00,0.00,'Sedan','/image/101.jpg',1),(102,'BUICK','V6 SFI','BLUE','LE SABRE',8829.00,0.00,'Sedan','/image/102.jpg',1),(103,'BUICK','V4','WHITE','LE SABRE',7894.00,0.00,'Sedan','/image/103.jpg',1),(104,'BUICK','V4','SILVER','LE SABRE 3.8L',7776.00,0.00,'Sedan','/image/104.jpg',1),(105,'BUICK','Eco','SILVER','LE SABRE 3.8L',6114.00,0.00,'Sedan','/image/105.jpg',1),(106,'BUICK',' V6 MFI SC','GREY','LE SABRE Unspecified',6500.00,0.00,'Sedan','/image/106.jpg',1),(107,'BUICK','V4','SILVER','LE SABRE Unspecified',6322.00,0.00,'Sedan','/image/107.jpg',1),(108,'BUICK','V6 E','SILVER','LE SABRE Unspecified',5843.00,0.00,'Sedan','/image/108.jpg',1),(109,'BUICK','V4','GREEN','LE SABRE Unspecified',6500.00,0.00,'Sedan','/image/109.jpg',1),(110,'BUICK','V6 SFI','BLUE','LE SABRE Unspecified',5397.00,0.00,'Sedan','/image/110.jpg',1),(111,'CHEVROLET','V6 NA S','SILVER','MALIBU 4C',6909.00,0.00,'Sedan','/image/111.jpg',1),(112,'CHEVROLET',' V6 MFI SC','BLUE','MALIBU 4C',11661.00,0.00,'Sedan','/image/112.jpg',1),(113,'CHEVROLET','V6 SFI','SILVER','MALIBU 4C',11914.00,0.00,'Sedan','/image/113.jpg',1),(114,'CHEVROLET','V4','BLUE','MALIBU 4C',12413.00,0.00,'Sedan','/image/114.jpg',1),(115,'CHEVROLET','V6 NA S','BEIGE','MALIBU 4C 2.2L I4 MP',8806.00,0.00,'Sedan','/image/115.jpg',1),(116,'CHEVROLET','V6 NA S','RED','MALIBU V6',12224.00,0.00,'Sedan','/image/116.jpg',1),(117,'CHEVROLET','V6 T','GOLD','MALIBU V6',11078.00,0.00,'Sedan','/image/117.jpg',1),(118,'CHEVROLET','V6 SOHC','BLUE','MALIBU V6 3.1L',4407.00,0.00,'Sedan','/image/118.jpg',1);
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -267,6 +269,8 @@ CREATE TABLE `transaction` (
   `product_id` int(11) NOT NULL,
   `salesperson_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL,
+  `sale` decimal(12,2) NOT NULL,
+  `profit` decimal(12,2) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `customerid` (`customer_id`),
   KEY `transaction_product_idx` (`product_id`),
@@ -283,9 +287,241 @@ CREATE TABLE `transaction` (
 
 LOCK TABLES `transaction` WRITE;
 /*!40000 ALTER TABLE `transaction` DISABLE KEYS */;
-INSERT INTO `transaction` VALUES (1,'2013-03-13',1,1,1,4),(2,'2004-11-11',2,2,2,6),(3,'2001-10-07',3,3,3,8),(4,'2000-04-25',4,4,4,11),(5,'2004-07-07',5,5,5,1),(6,'2009-01-18',6,6,6,2),(7,'2011-05-23',7,7,7,8),(8,'2009-03-11',8,8,8,6),(9,'2010-11-14',9,9,9,14),(10,'2003-01-27',10,10,10,3);
+INSERT INTO `transaction` VALUES (1,'2013-03-13',1,1,1,4,0.00,0.00),(2,'2004-11-11',2,2,2,6,0.00,0.00),(3,'2001-10-07',3,3,3,8,0.00,0.00),(4,'2000-04-25',4,4,4,11,0.00,0.00),(5,'2004-07-07',5,5,5,1,0.00,0.00),(6,'2009-01-18',6,6,6,2,0.00,0.00),(7,'2011-05-23',7,7,7,8,0.00,0.00),(8,'2009-03-11',8,8,8,6,0.00,0.00),(9,'2010-11-14',9,9,9,14,0.00,0.00),(10,'2003-01-27',10,10,10,3,0.00,0.00);
 /*!40000 ALTER TABLE `transaction` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'vehicle'
+--
+/*!50003 DROP PROCEDURE IF EXISTS `admin_get_inventory` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ALLOW_INVALID_DATES,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `admin_get_inventory`(
+
+)
+BEGIN
+SELECT products.productid as id, products.image, count(1) as count
+FROM products
+	join vehicle
+		on products.productid = vehicle.productid
+where vehicle.orderid is null
+group by products.productid, products.image;
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `admin_statistic_get_aggregate_profit` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ALLOW_INVALID_DATES,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `admin_statistic_get_aggregate_profit`(
+	_start_pdate datetime,
+    _end_pdate datetime
+)
+BEGIN
+select ifnull(sum(profit.profit),0) as totalProfit, count(1) as totalCount
+from
+	(select vehicle.productid as id
+	from vehicle
+		join `order`
+			on vehicle.orderid = `order`.orderid
+	where `order`.pdate >= _start_pdate and `order`.pdate <= _end_pdate) as sales
+    
+	join
+    
+	(select productid as id, price - inprice as profit
+	from products) as profit
+
+	on sales.id = profit.id;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `admin_statistic_get_best_business` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ALLOW_INVALID_DATES,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `admin_statistic_get_best_business`(
+	_productid int
+)
+BEGIN
+
+select customer.name, count(1) as count
+from vehicle
+	join products
+		on vehicle.productid = products.productid
+       and products.productid = _productid
+	join `order`
+		on `order`.orderid = vehicle.orderid
+	join customer
+		on `order`.customerid = customer.customerid
+       and customer.kind = 1
+group by customer.name
+order by count desc
+limit 1;
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `admin_statistic_get_region_sell_volumne` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ALLOW_INVALID_DATES,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `admin_statistic_get_region_sell_volumne`(
+	_start_pdate datetime,
+    _end_pdate datetime
+)
+BEGIN
+
+select region_name as regionName, count(1) as totalCount, ifnull(sum(profit.profit),0) as totalProfit
+from
+	(select vehicle.productid as id, region.region_name
+	from vehicle
+		join `order`
+			on vehicle.orderid = `order`.orderid
+		join store
+			on `order`.storeid = store.storeid
+		join region
+			on store.regionid = region.regionid
+	where `order`.pdate >= _start_pdate and `order`.pdate <= _end_pdate
+	) as sales
+    
+	join
+    
+	(select productid as id, price - inprice as profit
+	from products) as profit
+
+	on sales.id = profit.id
+group by sales.region_name
+order by totalCount desc;
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `order_get_order_history_by_customerid` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ALLOW_INVALID_DATES,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `order_get_order_history_by_customerid`(
+	_customerid int
+)
+BEGIN
+SELECT orderid, pdate, model, price, store.name as storeName, store.s_addressid
+FROM `order` 
+	join products
+		on `order`.productid = products.productid
+	join store
+		on `order`.storeid = store.storeid
+where customerid = _customerid
+order by `order`.orderid desc;
+
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `statistic_get_best_sell_cars` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ALLOW_INVALID_DATES,ERROR_FOR_DIVISION_BY_ZERO,TRADITIONAL,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `statistic_get_best_sell_cars`()
+BEGIN
+select 
+	products.productid as id,
+    products.model,
+    products.image,
+    products.price,
+    bestSale.count
+from products
+	join
+	(SELECT `order`.productid, count(1) as count 
+	FROM vehicle.vehicle
+		join `order`
+			on `order`.orderid = vehicle.orderid
+	where datediff( now(),`order`.pdate) < 30
+	group by `order`.productid) as bestSale
+		on products.productid = bestSale.productid
+order by bestSale.count desc 
+limit 6;
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `test` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8 */ ;
+/*!50003 SET character_set_results = utf8 */ ;
+/*!50003 SET collation_connection  = utf8_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `test`(
+ _id int,
+ amount int
+)
+BEGIN
+	update product
+    set inventory_amount = inventory_amount + amount
+    where id = _id;
+    
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -296,4 +532,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-03-25 10:59:18
+-- Dump completed on 2017-04-08 14:11:49
